@@ -137,3 +137,43 @@ header > nav {
     gap: 1rem;
     grid-area: social;
 }
+
+#projetos {
+    display: flex;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-black-color);
+    color: var(--bg-white-color);
+    padding: 1rem 1rem 2.25rem 1rem;
+    border-radius: 4px;
+    
+}
+
+.card > h3 {
+    align-self: flex-start;
+    margin: .75rem 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card > p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.card > img {
+    border-radius: 4px;
+    width: 100%;
+}
