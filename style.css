@@ -177,3 +177,55 @@ header > nav {
     border-radius: 4px;
     width: 100%;
 }
+
+#servicos {
+    background-color: var(--bg-black-color);
+    color: var(--bg-white-color);
+    padding: 2rem 1rem 3rem;
+}
+
+#title1 {
+    grid-area: titulo1;
+}
+
+#title2 {
+    grid-area: titulo2;
+}
+
+.lista {
+    padding: 0;
+    display: flex;
+}
+
+.red > li {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.lista > li {
+    list-style: none;
+    font-size: 18px;
+    padding: 1rem;
+    height: fit-content;
+}
+
+#listaServicos {
+    flex-direction: column;
+    gap: .75rem;
+    grid-area: serv;
+}
+
+#listaTech {
+    flex-wrap: wrap;
+    gap: .75rem;
+    justify-content: space-evenly;
+    grid-area: tech;
+}
+
+#listaTech > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+}
