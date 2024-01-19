@@ -108,3 +108,32 @@ header > nav {
 #luffyBG {
     display: none;
 }
+
+#sobre {
+    background-color: var(--bg-black-color);
+    color: var(--bg-white-color);
+
+    align-items: center;
+    padding: 2rem 1.5rem;
+}
+
+#sobre > img {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    grid-area: img;
+}
+
+#sobre > h2 {
+    grid-area: titulo;
+}
+
+#descricao {
+    grid-area: desc;
+}
+
+#social {
+    display: flex;
+    gap: 1rem;
+    grid-area: social;
+}
