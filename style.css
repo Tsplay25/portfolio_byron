@@ -24,6 +24,22 @@ section p {
     font-size: 14px;
 }
 
+@media screen and (min-width: 1024px) {
+    :root p {
+        font-size: 18px;
+    }
+
+    h1, 
+    h2{
+        font-size: 36px !important;
+        font-size: 36px;
+    }
+
+    .socialBtn {
+        font-size: 18px;
+    }
+}
+
 header {
     display: flex;
     align-items: center;
@@ -56,6 +72,12 @@ header > nav {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     transition: 0.4s;
+}
+
+@media screen and (min-width: 975px) {
+    header > nav {
+        display: inline;
+    }
 }
 
 #home {
@@ -109,6 +131,19 @@ header > nav {
     display: none;
 }
 
+@media screen and (min-width: 975px) {
+    #home {
+        background: none;
+    }
+
+    #luffyBG {
+        display: block;
+        position: absolute;
+        width: 35rem;
+        right: 5%;
+    }
+}
+
 #sobre {
     background-color: var(--bg-black-color);
     color: var(--bg-white-color);
@@ -136,6 +171,35 @@ header > nav {
     display: flex;
     gap: 1rem;
     grid-area: social;
+}
+
+@media screen and (min-width: 1024px) {
+    #sobre {
+        display: grid;
+        grid-template-areas: 
+            "img img . titulo"
+            "img img . desc"
+            "social social . desc"
+        ;
+        column-gap: 2rem;
+        padding: 4rem 9rem;
+    }
+
+    #sobre > h2 {
+        margin-bottom: 1rem;
+    }
+
+    #descricao {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    #sobre p {
+        line-height: 24px;
+        text-align: justify;
+        margin: 0;
+    }
 }
 
 #projetos {
@@ -176,6 +240,33 @@ header > nav {
 .card > img {
     border-radius: 4px;
     width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+
+    #projetos {
+        display: flex;
+        align-items: center;
+    }
+
+    #projetos > h2 {
+        margin: auto;
+    }
+
+    #cards{
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 auto;
+    max-width: 25%;
+    }
+
+    .card > img {
+        max-height: 50%;
+    }
 }
 
 #servicos {
@@ -230,6 +321,31 @@ header > nav {
     width: 4rem;
 }
 
+@media screen and (min-width: 1024px) {
+    #servicos {
+        display: grid;
+        grid-template-areas: 
+            "titulo1 titulo2"
+            "serv tech"
+        ;
+        column-gap: 9rem;
+        padding: 4rem 9rem;
+    }
+
+    #listaServicos > li {
+        font-size: 28px;
+        padding: 2.5rem 1.5rem;
+    }
+
+    #listaTech {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+        justify-items: center;
+        gap: .4rem;
+    }
+}
+
 #contato {
     padding: 1.5rem;
 }
@@ -261,6 +377,23 @@ header > nav {
 
 #contato > cite {
     font-size: 24px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    #contato ,
+    .contato {
+        display: flex;
+        align-items: center;
+    }
+
+    #contato > h2 {
+        margin: 2rem auto;
+    }
+
+    #contato > cite {
+        margin: 2rem 0;
+    }
 }
 
 footer {
