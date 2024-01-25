@@ -24,7 +24,7 @@ section p {
     font-size: 14px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 975px) {
     :root p {
         font-size: 18px;
     }
@@ -160,6 +160,7 @@ header > nav {
 }
 
 #sobre > h2 {
+    margin: 0 0 1rem 0;
     grid-area: titulo;
 }
 
@@ -182,23 +183,34 @@ header > nav {
             "social social . desc"
         ;
         column-gap: 2rem;
-        padding: 4rem 9rem;
-    }
-
-    #sobre > h2 {
-        margin-bottom: 1rem;
+        padding: 4rem 5rem;
     }
 
     #descricao {
         display: flex;
         flex-direction: column;
+        align-self: flex-start;
         gap: .5rem;
     }
 
     #sobre p {
-        line-height: 24px;
         text-align: justify;
+        height: 100%;
         margin: 0;
+        font-size: 14px;
+    }
+
+    #sobre > img {
+        max-width: 35vw;
+        height: 100%;
+        object-fit: cover;
+        justify-self: center;
+        align-self: flex-start;
+    }
+
+    #social {
+        margin-top: 1rem;
+        justify-content: center;
     }
 }
 
@@ -310,6 +322,8 @@ header > nav {
     flex-wrap: wrap;
     gap: .75rem;
     justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 25rem;
     grid-area: tech;
 }
 
@@ -342,7 +356,12 @@ header > nav {
         grid-template-columns: repeat(3, 1fr);
         align-content: center;
         justify-items: center;
-        gap: .4rem;
+        gap: 3rem;
+    }
+
+    #listaTech > li {
+        height: 100%;
+        width: 100%;
     }
 }
 
